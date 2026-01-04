@@ -1,89 +1,290 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-
-body{
-    background-color: rgb(125, 128, 128);
-}
-
-ul {
-    list-style-type: none;
-}
-
-button{ 
-    margin-left: 140px;
-    width: 140px;
-    height: 30px;
-    background-color: rgb(248, 219, 55);
-    border: 2px solid yellow;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.container{
-    
+.watch-header {
     display: flex;
-    gap: 50px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
     
-    width: 400px;
-    
-    height: 800px;
-    margin-top: 80px;
-    margin-left: 620px;
+     padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
 
-.but{
-    margin-left: 90px;
-    width: 240px;
-    height: 40px;
-    background-color: rgb(245, 244, 243);
-    border: 2px solid rgb(0, 255, 170);
-    border-radius: 10px;
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+
+.div {
+    display: flex;
+    gap: 40px;
+}
+
+
+.button {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #ffffff;
+}
+
+.button:hover {
+    background-color: #0e0d0d;
+    color: #222;
+    border: 2px solid #ffffff;
     cursor: pointer;
 }
 
-button:hover{
-    background-color: rgb(172, 173, 173);
+.button:hover svg {
+    fill: #222;
 }
 
-.but:hover{
-    border-color: rgb(131, 133, 134);
+.button svg {
+    display: inline;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.75rem;
+    color: white;
 }
 
-.card{
-    width: 400px;
-    height: 900px;
-    background-color: rgb(37, 37, 37);
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.button:hover svg {
+    animation: spin_357 0.5s linear;
 }
 
-.card h1 {
-    font-family: "Roboto",sans-serif;
-    color: aliceblue;
+@keyframes spin_357 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotatey(360deg);
+    }
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-content {
+    padding: 0 40px;
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+
+.text {
+    margin-left: 400px;
+    margin-top: 40px;
+    font-size: 50px;
+    width: 80%;
+
+}
+
+.hero-content h1 {
+    font-size: 140px;
+}
+
+
+
+
+.button2 {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #ffffff;
+    margin-left: 800px;
+}
+
+.button2:hover {
+    background-color: #0e0d0d;
+    color: #222;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.button2:hover svg {
+    fill: #222;
+}
+
+.button2 svg {
+    display: inline;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.75rem;
+    color: white;
+}
+
+.button2:hover svg {
+    animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotatey(360deg);
+    }
+}
+
+
+
+
+
+
+
+.button3 {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #ffffff;
+    margin-left: 25px;
+}
+
+.button3:hover {
+    background-color: #0e0d0d;
+    color: #222;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.button3:hover svg {
+    fill: #222;
+}
+
+.button3 svg {
+    display: inline;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.75rem;
+    color: white;
+}
+
+.button3:hover svg {
+    animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotatey(360deg);
+    }
+}
+
+
+
+.hero2 {
+    margin: auto;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 240, 243);
+    border-radius: 15px;
+}
+
+.wrire h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.wrire {
+    padding: 0 50px;
+    text-align: start;
+}
+.wrire p {
     text-align: center;
 }
 
-.card p {
-    font-family: "Roboto",sans-serif;
-    color: aliceblue;
-    text-align: center;
+
+
+.hero-content1 {
+    padding: 0 40px;
+    font-size: 20px;
+    margin-left: 160px;
+    font-weight: 400;
+
 }
 
-.card h4 span {
-    color: rgb(122, 123, 124);
+
+.text1 {
+    margin-left: 400px;
+    margin-top: 60px;
+    font-size: 50px;
+    width: 80%;
+    color: gray;
 }
 
-.card h4 {
-    color: aliceblue;
-    font-family: "Roboto",sans-serif;
-    text-align: center;
-     }
-
-     li{
-        color: aliceblue;
-        font-family: "Roboto",sans-serif;
-        text-align: center; 
-     }
+.hero-content1 h1 {
+    font-size: 120px;
+}
